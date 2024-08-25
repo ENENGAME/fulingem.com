@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福澤寶石罐股份有限公司</title>
+    <link rel="stylesheet" href="PNG/style.css">
+</head>
+<body>
+
+<!-- 頁首 -->
+<header>
+    <div class="header-container">
+        <div class="header-right">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </div>
+    <nav id="nav" class="nav">
+        <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#products">製作過程</a></li>
+            <li><a href="#process">產品分類</a></li>
+            <li><a href="#testimonials">客戶好評</a></li>
+            <li><a href="#contact">聯絡我們</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- 橫幅區域 -->
+<section id="home" class="banner">
+    <div class="banner-text">
+        <h1>福澤寶石罐 <br>永恆的象徵</h1>
+        <p>精選材質，精工打造，傳承永恆之美。</p>
+        <a href="#products" class="cta-button">了解更多</a>
+    </div>
+</section>
+
+<!-- 產品系列 -->
+<section id="products" class="product-series">
+    <div class="container">
+        <h2>製作過程</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <div class="carousel">
+                    <button class="carousel-button prev" onclick="prevSlide(this)">&#10094;</button>
+                    <div class="carousel-images" data-index="0">
+                        <img src="PNG/1.jpg" alt="玉石系列 1">
+                        <img src="PNG/2.jpg" alt="玉石系列 2">
+                        <img src="PNG/3.jpg" alt="玉石系列 3">
+                    </div>
+                    <button class="carousel-button next" onclick="nextSlide(this)">&#10095;</button>
+                </div>
+                <h3>開採玉石</h3>
+                <p>精選上等玉石，象徵高貴與純潔，傳遞永恆的愛與思念。</p>
+            </div>
+            <div class="product-item">
+                <div class="carousel">
+                    <button class="carousel-button prev" onclick="prevSlide(this)">&#10094;</button>
+                    <div class="carousel-images" data-index="0">
+                        <img src="PNG/進貨1.png" alt="倉庫 1">
+                        <img src="PNG/進貨2.png" alt="倉庫 2">
+                        <img src="PNG/倉庫2.png" alt="倉庫 3">
+                    </div>
+                    <button class="carousel-button next" onclick="nextSlide(this)">&#10095;</button>
+                </div>
+                <h3>倉庫進貨</h3>
+                <p>精選上等玉石，象徵高貴與純潔，傳遞永恆的愛與思念。</p>
+            </div>
+            <div class="product-item">
+                <div class="carousel">
+                    <button class="carousel-button prev" onclick="prevSlide(this)">&#10094;</button>
+                    <div class="carousel-images" data-index="0">
+                        <img src="PNG/加工1.jpg" alt="加工 1">
+                        <img src="PNG/加工2.jpg" alt="加工 2">
+                        <img src="PNG/加工3.jpg" alt="加工 3">
+                        <img src="PNG/加工4.jpg" alt="加工 3">
+                    </div>
+                    <button class="carousel-button next" onclick="nextSlide(this)">&#10095;</button>
+                </div>
+                <h3>原石加工</h3>
+                <p>天然琥珀，凝結時間的美麗，保存珍貴的回憶與情感。</p>
+            </div>
+            <div class="product-item">
+                <div class="carousel">
+                    <button class="carousel-button prev" onclick="prevSlide(this)">&#10094;</button>
+                    <div class="carousel-images" data-index="0">
+                        <img src="PNG/展示1.png" alt="展示 1">
+                        <img src="PNG/展示2.png" alt="展示 2">
+                        <img src="PNG/展示3.png" alt="展示 3">
+                        <img src="PNG/展示4.png" alt="展示 4">
+                    </div>
+                    <button class="carousel-button next" onclick="nextSlide(this)">&#10095;</button>
+                </div>
+                <h3>陶瓷系列</h3>
+                <p>傳統陶瓷工藝，簡約而典雅，體現深沉的情感與尊重。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 產品分類 -->
+<section id="process" class="process">
+    <div class="container">
+        <h2>產品分類</h2>
+        <div class="process-list">
+            <div class="process-item">
+                <img src="PNG/寵物罐圖.jpg" alt="製作過程 1">
+                <p>寵物寶石罐</p>
+            </div>
+            <div class="process-item">
+                <img src="PNG/臻愛寶石罐.jpg" alt="製作過程 2">
+                <p>臻愛寶石罐</p>
+            </div>
+            <div class="process-item">
+                <img src="PNG/翡翠、碧玉寶石罐.jpg" alt="製作過程 3">
+                <p>翡翠、碧玉寶石罐</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 客戶好評 -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <h2>客戶好評</h2>
+        <div class="testimonial-list">
+            <div class="testimonial-item">
+                <p>"福澤寶石罐的產品品質卓越，服務貼心，讓我們感受到滿滿的溫暖與關懷。"</p>
+                <span>- 王先生</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"感謝福澤寶石罐為我們提供如此精美的骨灰甕，完美地紀念了我們所愛的人。"</p>
+                <span>- 李小姐</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"專業的團隊，優質的產品，讓我們在艱難的時刻得到了最大的安慰。"</p>
+                <span>- 張先生</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 聯絡我們 -->
+<section id="contact" class="contact-us">
+    <div class="container">
+        <h2>聯絡我們</h2>
+        <p>如有任何疑問或需求，歡迎隨時與我們聯絡，我們將竭誠為您服務。</p>
+        <div class="contact-info">
+            <p><strong>電話：</strong>0919-226-460 (周小姐)</p>
+            <p><strong>電子郵件：</strong><a href="mailto:kb0963018949@gmail.com">kb0963018949@gmail.com</a></p>
+            <p><strong>地址：</strong>新北市新莊區丹鳳捷運站旁</p>
+        </div>
+    </div>
+</section>
+
+<!-- 頁尾 -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p>&copy; 2024 福澤寶石罐股份有限公司。版權所有。</p>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('open');
+    }
+
+    function nextSlide(button) {
+        const carousel = button.parentElement;
+        const carouselImages = carousel.querySelector('.carousel-images');
+        const images = carouselImages.children;
+        const totalImages = images.length;
+        let index = parseInt(carouselImages.getAttribute('data-index'), 10) || 0;
+
+        index = (index + 1) % totalImages;
+        carouselImages.setAttribute('data-index', index);
+        carouselImages.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function prevSlide(button) {
+        const carousel = button.parentElement;
+        const carouselImages = carousel.querySelector('.carousel-images');
+        const images = carouselImages.children;
+        const totalImages = images.length;
+        let index = parseInt(carouselImages.getAttribute('data-index'), 10) || 0;
+
+        index = (index - 1 + totalImages) % totalImages;
+        carouselImages.setAttribute('data-index', index);
+        carouselImages.style.transform = `translateX(-${index * 100}%)`;
+    }
+</script>
+
+</body>
+</html>
