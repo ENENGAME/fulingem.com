@@ -1,6 +1,6 @@
 /* 通用樣式 */
 body {
-    background-image: url('PNG/bg.png');
+    background-image: url('bg.png');
     background-repeat: repeat; /* 讓圖片重複顯示 */
     background-size: cover; /* 等比例縮小並切齊寬度 */
     background-position: center; /* 圖片置中顯示 */
