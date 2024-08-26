@@ -98,12 +98,15 @@ header {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%); /* 水平置中 */
+    transform: translateX(-50%);
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    text-align: center; /* 確保文本內容水平置中 */
+    text-align: center;
+    width: 60%; /* 這裡設置你想要的寬度，例如 60% */
+    max-width: 1500px; /* 設置最大寬度 */
 }
+
 
 .cta-button {
     background: #ff5722;
