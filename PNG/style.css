@@ -74,10 +74,11 @@ header {
 
 /* 橫幅區域 */
 .banner {
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-    text-align: center; /* 確保內部文本內容水平置中 */
+    display: flex; /* 使用彈性盒子模型 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: auto; /* 根據內容自動調整高度 */
+    padding: 20px; /* 增加內邊距確保內容不貼邊 */
 }
 
 .banner-carousel {
@@ -95,17 +96,31 @@ header {
 
 /* 橫幅文本區域 */
 .banner-text {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative; /* 保持相對定位 */
+    margin: 0 auto; /* 水平居中 */
     color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    text-align: center;
-    width: 60%; /* 這裡設置你想要的寬度，例如 60% */
-    max-width: 1500px; /* 設置最大寬度 */
+    background: rgba(0, 0, 0, 0.5); /* 灰色背景 */
+    padding: 50px; /* 內邊距，增加文本與邊界的距離 */
+    text-align: center; /* 文本居中 */
+    width: 1000px; /* 自動調整寬度 */
+    height: auto; /* 自動調整高度 */
+    display: block; /* 讓容器擁有完整的塊級特性並能容納寬高 */
+    max-width: 100%; /* 確保不會超出屏幕寬度 */
+    word-wrap: break-word; /* 讓長詞換行，不會超出容器 */
+    box-sizing: border-box; /* 包括內邊距和邊框在內的寬度與高度計算 */
+    overflow: hidden; /* 避免文字超出容器範圍 */
 }
+
+@media (max-width: 768px) {
+    .banner-text {
+        max-width: 90%; /* 在小屏幕上限制寬度，保持良好的可讀性 */
+        margin: 0 5%; /* 調整水平居中時的間距 */
+    }
+}
+
+
+
+
 
 
 .cta-button {
