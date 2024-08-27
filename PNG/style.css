@@ -220,6 +220,12 @@ header {
     color: #333;
     text-decoration: none;
 }
+/* 設定圖片等比例縮小 */
+.responsive-image {
+    max-width:25%;
+    height: auto;
+}
+
 
 /* 頁尾 */
 footer {
@@ -250,6 +256,7 @@ footer {
     color: #fff;
     text-decoration: none;
 }
+
 
 /* 手機模式樣式 */
 @media (max-width: 768px) {
